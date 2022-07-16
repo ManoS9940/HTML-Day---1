@@ -1,0 +1,112 @@
+<!-- Design a contact us form with all fields as required. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <style>
+        .input-box{
+            padding: 5px;
+            }
+        .container{
+            background-color: aqua;
+            width: 300px;
+            height: 300px;
+        }
+        h3{
+            margin-left:10px;
+            padding-top:10px;
+        }
+        
+        .button{
+            padding-left: 10px;
+        }
+        .main-container{
+            background-color: greenyellow;
+            padding-top:10px;
+            margin-top:10px;
+            margin-bottom:10px;
+            padding-bottom: 10px;
+            width: 300px;
+            padding-left: 10px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h3>Contact Us</h3>
+        <div class="input-box">
+            <label for="Name">Name:</label><br>
+            <input type="text" placeholder="Enter Your Name" required>
+        </div>
+        <div class="input-box">
+            <label for="Email">Email:</label><br>
+            <input type="text" placeholder="Enter Your Email Address" required>
+        </div>
+        <div class="input-box message-box">
+            <Label for="Message">Message:</Label><br>
+            <textarea id="Message" placeholder="Enter Your Message" required></textarea>
+        </div><br>
+        <div class="button">
+            <button class="btn btn-primary">Submit</button>
+        </div>
+        </div>
+    </form>
+</body>
+</html>
+
+<!-- Use certain HTML elements to display the following in a HTML page. -->
+<section class="main-container">
+<li>Programming Language</li>
+    <ul>
+        <li type="circle">JavaScript</li>
+        <ol>
+            <li type="a">Angular</li>
+            <li type="a">React</li>
+            <li type="a">Vue.js</li>
+        </ol>
+    </ul>
+    <ul>    
+        <li type="circle">Python</li>
+        <ol>
+            <li type="a">Django Framework</li>
+            <li type="a">Flask Framework</li>
+        </ol>
+    </ul>
+    <ul>
+        <li type="circle">Java</li>
+        <ol>
+            <li type="a">Spring</li>
+            <li type="a">Maven</li>
+            <li type="a">Hibernate</li>
+        </ol>
+    </ul>
+<li>Database</li>
+    <ul>
+        <li type="circle">MySQL</li>
+        <li type="circle">MongoDB</li>
+        <li type="circle">Cansandra</li>
+    </ul>
+    <!-- Create an element that helps you to open the https://google.com in separate new tab. -->
+    <P><a href="http://google.com/" target="_blank">Click here</a> to open google in new tab</P>
+</section>
+<!-- In the form, add two radio buttons with grouping them for employee type(Salaried and own business) -->
+<div class="right-side">
+    <h2>Types of Employees</h2>
+    <div>
+    <input type="radio">Salaried</input>
+    </div>
+    <input type="radio">Own Business</input>
+</div>
+<!-- In your, HTML page add the below line and Highlight it without using any CSS. -->
+<ul>
+<li>
+    <mark>
+    "HTML & CSS is awesome"
+    </mark>
+</li>
+</ul>
+

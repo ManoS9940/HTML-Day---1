@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <style>
+        body{
+            border: 1px solid black;
+            padding-left:10px;
+            width:50%;
+            border-width:3px;
+        }
+        .header-container{
+            background-color: red;
+            margin-right:10px;
+            margin-top:10px;
+            
+        }
+        .header-container>h4{
+            color:white;
+            text-align: center;
+            font-size: 25px;
+        }
+        input.user_input{
+            border: none;
+            border-bottom:1px solid black;
+            margin-right:30px;
+            padding: 10px;
+        }
+        input.user_address{
+            border: none;
+            border-bottom:1px solid black;
+            margin-right:30px;
+            padding: 10px;
+            width:50%; 
+        }
+        input.user_input:focus{
+            box-shadow: 0 4px 2px -2px #666;
+            outline-width: 0;
+        }
+        .left{
+            float: left;
+        }
+        .clear{
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+        <div class="header-container">
+            <h4>Yes! I want to subscribe to <i>Mag-O-Zine</i></h4>
+        </div>
+        <div class="container">
+            <form action="" method="post">
+                <div class="left">
+                    <input type="text" Name="First Name" class="user_input"/><br>
+                    <label for="fname" class="user_firstname">First Name</label>
+                </div>
+                <div class="left">
+                    <input type="text" Name="Last Name" class="user_input"/><br>
+                    <label for="lname" class="user_lastname">Last Name</label>
+                </div>
+                <div class="clear">&nbsp;</div>
+                <div>
+                    <input type="text" id="Address" class="user_address"/><br>
+                    <label for="address" class="user_address">Address</label>
+                </div>
+                <div class="left">
+                    <input type="text" id="city" class="user_input"/><br>
+                    <label for="city">City</label>
+                </div>
+                <div class="left">
+                    <input type="text" id="state" class="user_input"/><br>
+                    <label for="state">State</label>
+                </div>
+                <div class="left">
+                    <input type="text" id="Zip" class="user_input"/><br>
+                    <label for="Zip">Zip</label>
+                </div>
+                <div class="clear">&nbsp;</div>
+                <div class="content">
+                    <h4>Subscribe for:
+                            <label>
+                                <input type="checkbox">
+                                1 year ($19.95)
+                                    <label>
+                                        <input type="checkbox">
+                                        2 years ($35.00)
+                                    </label>
+                            </label>
+                    </h4>
+                </div>
+                <div>
+                    <h4>Send me more information about:</h4>
+                        <h4><label>
+                                <input type="checkbox">
+                                Computer-Zine
+                            </label><br>
+                            <label>
+                                <input type="checkbox">
+                                Fishing-Zine
+                            </label><br>
+                            <label>
+                                <input type="checkbox">
+                                Cat-O-Zine
+                            </label>
+                        </h4>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
